@@ -3,12 +3,11 @@ name: Dart
 on:
   push:
     branches: [ 101-starter ]
-  pull_request:
-    branches: [ 101-starter ]
+ 
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     # Note that this workflow uses the latest stable version of the Dart SDK.
     # Docker images for other release channels - like dev and beta - are also
